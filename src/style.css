@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Inter var';
+    src: url('assets/fonts/Inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0, 0%, 12%);
+    --color-grey-900: hsl(0, 0%, 8%);
+    --font-sans: 'Inter var', sans-serif;
+
+}
+
+.link-button{
+    @apply text-white text-[10px] font-bold bg-grey-700 rounded-md h-[30px] w-full grid place-content-center my-[2px] cursor-pointer hover:bg-green hover:text-grey-900;
+}
